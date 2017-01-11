@@ -1,9 +1,22 @@
+// Modules
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
+// Components
+import Navbar from './components/Navbar';
+
+require('../stylesheets/main.scss')
+
 class App extends Component {
-  constructor(props) {
-    super(props);
+  render() {
+    return (
+      <div>
+        <Navbar />
+        <h1>Main App</h1>
+        <h1>IdeaZone</h1>
+      </div>
+      );
   }
-  return <h1>App</h1>
 }
+
+ReactDOM.render(<App />, document.getElementById('App'));
